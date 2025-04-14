@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LDS Joke Generator</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        #container {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 80%;
+            max-width: 400px;
+        }
+        #joke {
+            font-size: 1.5rem;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="container">
+        <h1>LDS Joke Generator</h1>
+        <p id="joke">Click the button below to get an LDS joke!</p>
+        <button onclick="generateJoke()">Get Joke</button>
+    </div>
+
+    <script>
+        const jokes = [
+            "Why don't Mormons tell jokes about missionaries? Because the punchlines always come after the lesson!",
+            "What do you call a missionary who loves to play the piano? A 'key' to success!",
+            "Why did the Mormon bring a ladder to church? Because he wanted to go to a higher level of spirituality!",
+            "What’s a missionary’s favorite type of music? Hymns, of course!",
+            "Why did the Mormon cross the road? To share the gospel on the other side!"
+        ];
+
+        function generateJoke() {
+            const randomJoke = jokes[Math.floor(Math.random() * jokes.length)];
+            document.getElementById("joke").innerText = randomJoke;
+        }
+    </script>
+
+</body>
+</html>
