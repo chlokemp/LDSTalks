@@ -1,24 +1,27 @@
-let totalTemples = 382; // Total number of temples worldwide
-let operatingTemples = 195;
-let underConstructionTemples = 54;
-let renovationTemples = 8;
-let announcedTemples = 120;
-
-let randomNumber = Math.floor(Math.random() * totalTemples) + 1; // Random number between 1 and total temples
+// JavaScript for the Number Guessing Game
+let targetNumber = 382; // Fixed number of LDS Temples worldwide
 let attempts = 0;
 
 function checkGuess() {
-  let userGuess = document.getElementById('guessInput').value;
-  let feedback = document.getElementById('feedback');
-  attempts++;
-
-  if (userGuess == randomNumber) {
-    feedback.innerHTML = `Congratulations! You guessed correctly in ${attempts} attempt(s). The number was ${randomNumber}.`;
-  } else if (userGuess < randomNumber) {
-    feedback.innerHTML = `Too low! Try again.`;
-  } else if (userGuess > randomNumber) {
-    feedback.innerHTML = `Too high! Try again.`;
-  } else {
-    feedback.innerHTML = `Please enter a valid number.`;
-  }
+    const userGuess = document.getElementById('guess').value; // Get the user's guess
+    const resultElement = document.getElementById('result');
+    
+    // Validate the input
+    if (userGuess < 1 || userGuess > 500 || isNaN(userGuess)) { // Adjusted range to 1-500
+        resultElement.textContent = "Please enter a valid number between 1 and 500.";
+        return;
+    }
+    
+    // Increment attempts
+    attempts++;
+    
+    // Check if the guess is too low, too high, or correct
+    if (userGuess < targetNumber) {
+        resultElement.textContent = "Too low! Try again.";
+    } else if (userGuess > targetNumber) {
+        resultElement.textContent = "Too high! Try again.";
+    } else {
+        resultElement.textContent = `Congratulations! You guessed the number in ${attempts} attempts. The total number of LDS temples is 382.`;
+    }
 }
+
