@@ -1,44 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Résumé</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f9fa;
+      padding: 20px;
+      color: #333;
+    }
+
+    .resume-container {
+      max-width: 800px;
+      margin: auto;
+      background: white;
+      padding: 30px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-radius: 10px;
+    }
+
+    h1, h2 {
+      color: #007bff;
+    }
+
+    ul {
+      list-style-type: disc;
+      margin-left: 20px;
+    }
+
+    .section {
+      margin-bottom: 25px;
+    }
+
+    .back-home {
+      margin-top: 40px;
+      display: block;
+      text-align: center;
+    }
+
+    .back-home a {
+      text-decoration: none;
+      color: #007bff;
+      font-weight: bold;
+    }
+  </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Words of Light</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="talks.html">Talks</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="resume.html">Resume</a>
-                </li>
-                 <li class="nav-item">
-                    <a class="nav-link" href="scratch.html">Scratch Page</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+  <div class="resume-container">
+    <h1>Your Name</h1>
+    <p><strong>Major:</strong> Human Resources</p>
+    <p><strong>Career Goal:</strong> Future Orthodontist (Pre-Dental Track)</p>
 
-    <div class="container">
-        <h1>Resume</h1>
-        <p>Example Resume Content</p>
-
+    <div class="section">
+      <h2>Education</h2>
+      <ul>
+        <li>Brigham Young University – Human Resources Major (Expected Graduation: 20XX)</li>
+        <li>Pre-Dental Courses: Biology, Chemistry, Anatomy, Physics</li>
+      </ul>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <div class="section">
+      <h2>Experience</h2>
+      <ul>
+        <li>Dental Office Intern – Shadowed orthodontists and dental assistants, learned about procedures and patient care</li>
+        <li>HR Assistant – Helped new hires complete onboarding paperwork, learned about employee relations and communication</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Skills</h2>
+      <ul>
+        <li>Strong interpersonal communication</li>
+        <li>Organized and detail-oriented</li>
+        <li>Fluent in Spanish</li>
+        <li>Proficient in Microsoft Office, Excel, and Google Suite</li>
+        <li>Basic HTML, CSS, and web development</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Honors & Awards</h2>
+      <ul>
+        <li>Dean’s List – BYU</li>
+        <li>Leadership Scholarship Recipient</li>
+        <li>National Honor Society (High School)</li>
+      </ul>
+    </div>
+
+    <div class="back-home">
+      <a href="index.html">← Back to Home</a>
+    </div>
+  </div>
 </body>
 </html>
