@@ -1,14 +1,24 @@
-let randomNumber = Math.floor(Math.random() * 100) + 1;
+let totalTemples = 382; // Total number of temples worldwide
+let operatingTemples = 195;
+let underConstructionTemples = 54;
+let renovationTemples = 8;
+let announcedTemples = 120;
+
+let randomNumber = Math.floor(Math.random() * totalTemples) + 1; // Random number between 1 and total temples
+let attempts = 0;
 
 function checkGuess() {
-  let userGuess = document.getElementById('guess').value;
-  let result = document.getElementById('result');
+  let userGuess = document.getElementById('guessInput').value;
+  let feedback = document.getElementById('feedback');
+  attempts++;
 
   if (userGuess == randomNumber) {
-    result.textContent = "Correct! You guessed the number!";
+    feedback.innerHTML = `Congratulations! You guessed correctly in ${attempts} attempt(s). The number was ${randomNumber}.`;
   } else if (userGuess < randomNumber) {
-    result.textContent = "Too low! Try again.";
+    feedback.innerHTML = `Too low! Try again.`;
+  } else if (userGuess > randomNumber) {
+    feedback.innerHTML = `Too high! Try again.`;
   } else {
-    result.textContent = "Too high! Try again.";
+    feedback.innerHTML = `Please enter a valid number.`;
   }
 }
