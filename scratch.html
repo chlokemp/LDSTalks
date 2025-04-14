@@ -3,44 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Scratch Page</title>
-    <link rel="stylesheet" href="css/scratch.css">
+    <title>LDS Temples</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
+    <!-- Navigation -->
     <nav>
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#section1">Section 1</a></li>
-            <li><a href="ai_app.html">AI Web App</a></li>
-             <li><a href="graduate.html">Graduate Page</a></li>
+            <li><a href="#temple-list">Temples</a></li>
+            <li><a href="#video">Video</a></li>
+            <li><a href="#graph">Temple Growth</a></li>
         </ul>
     </nav>
 
-    <div class="container">
-        <h1>Scratch Page</h1>
+    <!-- Header Section -->
+    <header>
+        <h1>Exploring LDS Temples</h1>
+        <p>Learn about beautiful temples of The Church of Jesus Christ of Latter-day Saints.</p>
+    </header>
 
+    <!-- Temples List Section -->
+    <section id="temple-list">
+        <h2>Featured Temples</h2>
+        <p>These temples are known for their beautiful architecture and spiritual significance:</p>
+        
         <ol>
-            <li>Item 1
-                <ul>
-                    <li>Sub-item A</li>
-                    <li>Sub-item B</li>
-                </ul>
+            <li>
+                <h3>Draper Utah Temple</h3>
+                <img src="https://churchofjesuschristtemples.org/assets/img/temples/draper-utah-temple/draper-utah-temple-38937-main.jpg" alt="Draper Utah Temple" width="300">
+                <p>The Draper Utah Temple is known for its stunning location and modern design.</p>
             </li>
-            <li>Item 2</li>
+            <li>
+                <h3>Provo City Center Temple</h3>
+                <img src="https://www.churchofjesuschrist.org/imgs/e97d43cdfab131f3ffac633cd7c952de861d51c8/full/800%2C/0/default" alt="Provo City Center Temple" width="300">
+                <p>The Provo City Center Temple is housed in a former tabernacle, blending history with sacred purpose.</p>
+            </li>
+            <li>
+                <h3>Hawaii Honolulu Temple</h3>
+                <img src="https://www.churchofjesuschrist.org/imgs/809f567ccf240d2f1c8e457e8c81fbd94ef96759/full/800%2C/0/default" alt="Hawaii Honolulu Temple" width="300">
+                <p>Located in the beautiful city of Honolulu, the Hawaii Temple is known for its peaceful surroundings.</p>
+            </li>
         </ol>
+    </section>
 
-        <img src="image.jpg" alt="Example Image">
+    <!-- Video Section -->
+    <section id="video">
+        <h2>Temple Construction Video</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/FYOb1rPbk10" frameborder="0" allowfullscreen></iframe>
+    </section>
 
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
-
-        <div id="section1">
-            <h2>Section 1</h2>
-            <p>This is section 1.</p>
+    <!-- Temple Growth Graph Section -->
+    <section id="graph">
+        <h2>Temple Growth Over Time</h2>
+        <div id="tableau-graph">
+            <!-- Embed Tableau graph here (use iframe or provided embed link) -->
+            <iframe src="https://public.tableau.com/views/TempleGrowth/TempleGrowth?:showVizHome=no&:embed=true" width="800" height="600"></iframe>
         </div>
+    </section>
 
-        <div>
-            <!-- Tableau Graph Placeholder -->
-        </div>
-    </div>
+    <!-- Web App Link -->
+    <section id="app">
+        <h2>AI Web App: Temple Quote Generator</h2>
+        <p>Click below for a random temple-related quote:</p>
+        <a href="quote-generator.html" target="_blank">Temple Quote Generator</a>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 LDS Temples Project</p>
+    </footer>
+
 </body>
 </html>
